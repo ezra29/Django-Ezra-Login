@@ -1,0 +1,23 @@
+body{
+    background-image: url(law.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #092C1E ;
+}
+h1{
+    width: 17%;
+    margin: auto;
+    margin-top: 80px;
+}
+#but,#form{
+    margin-top: 2px;
+    font-size: larger;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+#but:hover{
+  background-color: #092C1E;
+  color: #F2F2F2;
+  border-radius: 5px;
+}

@@ -1,0 +1,24 @@
+{% block content %}
+{% load static %}
+ <html>
+    <head>
+         <link rel="stylesheet" href="{% static 'login.css' %}">
+         <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet"> 
+   </head>
+   <body> 
+    <div id="main">        
+    <h1>Login Page</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="input1"><br>
+        
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="input2" style="margin-left: 6.5px;"><br>
+            
+            <input type='submit' value='submit' id='button'>
+        </form>
+    </div>     
+    </body>
+</html>
+ {% endblock content%}

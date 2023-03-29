@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>Home Page</title>
+     <link rel="stylesheet" href="{% static 'home.css'%}">
+  </head>
+  <body>
+    <h1>Welcome Home My Friend </h1>
+    <form method="post" action="{% url 'logout_view' %}" id="form">
+      {% csrf_token %}
+      <input type="submit" value="Log out" id="but">
+  </form>
+  </body>
+</html>
