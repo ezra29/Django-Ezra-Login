@@ -25,3 +25,7 @@ def login_user(request):
 def logout_view(request):
     logout(request)
     return redirect('Login')
+
+def test_git(request):
+    context = {}
+    return render(request,'test.html', context)
